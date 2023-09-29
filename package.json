@@ -1,5 +1,5 @@
 {
-  "name": "projeto-04",
+  "name": "projeto-06",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "lint": "eslint . --max-warnings=0"
   },
   "dependencies": {
+    "@styled-icons/material-outlined": "^10.47.0",
     "next": "13.4.19",
     "prop-types": "^15.8.1",
     "react": "18.2.0",
