@@ -1,22 +1,30 @@
 import { ArticleMetaProps } from '.';
 
 export default {
-  createdAt: '2023-09-27T11:23:20.641Z',
+  createdAt: '2023-09-27T11:26:43.234Z',
   author: {
-    id: '123456789',
-    slug: 'otavio-miranda',
-    displayName: 'Otávio Miranda',
+    data: {
+      id: '1',
+      attributes: {
+        displayName: 'Gabriel Sousa',
+        slug: 'gabriel-sousa',
+      },
+    },
   },
   categories: [
     {
-      id: 'asdslgyh65',
-      displayName: 'Tech',
-      slug: 'tech',
+      id: '1',
+      attributes: {
+        displayName: 'JavaScript',
+        slug: 'java-script',
+      },
     },
     {
-      id: 'asdslgyh66',
-      displayName: 'JS',
-      slug: 'javascript',
+      id: '2',
+      attributes: {
+        displayName: 'React',
+        slug: 'react',
+      },
     },
   ],
 } as ArticleMetaProps;

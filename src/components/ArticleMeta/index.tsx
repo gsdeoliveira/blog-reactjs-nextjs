@@ -18,7 +18,9 @@ export const ArticleMeta = ({
     <Styled.Wrapper>
       <p>
         <span>Por </span>
-        <a href={`/author/${author.slug}`}>{author.displayName}</a>
+        <a href={`/author/${author.data.attributes.slug}`}>
+          {author.data.attributes.displayName}
+        </a>
         <span className="separator"> | </span>
         <time dateTime={createdAt}>{formatDate(createdAt)}</time>
         <span className="separator"> | </span>
@@ -27,8 +29,8 @@ export const ArticleMeta = ({
           {categories.map((category) => {
             return (
               <span key={`article-meta-cat-${category.id}`}>
-                <a href={`/category/${category.slug}`}>
-                  {category.displayName}
+                <a href={`/category/${category.attributes.slug}`}>
+                  {category.attributes.displayName}
                 </a>
               </span>
             );

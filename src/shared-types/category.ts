@@ -1,3 +1,7 @@
-import { Metadata } from './metadata';
-
-export type Category = Metadata;
+export type Category = {
+  id: string;
+  attributes: {
+    displayName: string;
+    slug: string;
+  };
+};
