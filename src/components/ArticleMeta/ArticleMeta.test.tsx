@@ -10,16 +10,17 @@ describe('<ArticleMeta />', () => {
   it('should render author and category links', () => {
     renderTheme(<ArticleMeta {...props} />);
 
-    expect(
-      screen.getByRole('link', { name: 'Otávio Miranda' }),
-    ).toHaveAttribute('href', '/author/otavio-miranda');
-    expect(screen.getByRole('link', { name: 'Tech' })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: 'Gabriel Sousa' })).toHaveAttribute(
       'href',
-      '/category/tech',
+      '/author/gabriel-sousa',
     );
-    expect(screen.getByRole('link', { name: 'JS' })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: 'JavaScript' })).toHaveAttribute(
       'href',
-      '/category/javascript',
+      '/category/java-script',
+    );
+    expect(screen.getByRole('link', { name: 'React' })).toHaveAttribute(
+      'href',
+      '/category/react',
     );
   });
 

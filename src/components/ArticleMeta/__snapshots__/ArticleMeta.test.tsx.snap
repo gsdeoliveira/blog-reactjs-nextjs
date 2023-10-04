@@ -34,9 +34,9 @@ exports[`<ArticleMeta /> should match snapshot 1`] = `
         Por 
       </span>
       <a
-        href="/author/otavio-miranda"
+        href="/author/gabriel-sousa"
       >
-        Otávio Miranda
+        Gabriel Sousa
       </a>
       <span
         class="separator"
@@ -44,7 +44,7 @@ exports[`<ArticleMeta /> should match snapshot 1`] = `
          | 
       </span>
       <time
-        datetime="2023-09-27T11:23:20.641Z"
+        datetime="2023-09-27T11:26:43.234Z"
       >
         27 de set. de 2023
       </time>
@@ -58,16 +58,16 @@ exports[`<ArticleMeta /> should match snapshot 1`] = `
       >
         <span>
           <a
-            href="/category/tech"
+            href="/category/java-script"
           >
-            Tech
+            JavaScript
           </a>
         </span>
         <span>
           <a
-            href="/category/javascript"
+            href="/category/react"
           >
-            JS
+            React
           </a>
         </span>
       </span>

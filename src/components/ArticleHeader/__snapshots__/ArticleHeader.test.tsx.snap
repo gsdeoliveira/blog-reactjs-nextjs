@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ArticleHeader /> should render heading, excerpt, cover img and meta 1`] = `
+.c5 {
+  font-size: 1.6rem;
+  color: #AAAAAA;
+  font-style: italic;
+}
+
+.c5 .categories span::after {
+  content: ', ';
+}
+
+.c5 .categories span:last-child::after {
+  content: '';
+}
+
+.c5 a {
+  color: #dc143c;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+
+.c5 a:hover {
+  filter: brightness(50%);
+}
+
+.c2 {
+  color: #000000;
+  line-height: 1.2;
+  font-size: 6.4rem;
+  text-transform: none;
+}
+
+.c0 {
+  padding-bottom: 4.0rem;
+  margin-bottom: 4.0rem;
+  border-bottom: 0.1rem solid #DDDDDD;
+}
+
+.c0 .c1 {
+  margin: 0;
+  margin-bottom: 2.4rem;
+}
+
+.c3 {
+  margin: 2.4rem 0;
+  font-size: 2.4rem;
+}
+
+.c4 {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 768px) {
+  .c2 {
+    font-size: 4.0rem;
+  }
+}
+
+<div>
+  <header
+    class="c0"
+  >
+    <h1
+      class="c1 c2"
+    >
+      Lorem ipsum dolor sit amet
+    </h1>
+    <p
+      class="c3"
+    >
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    </p>
+    <img
+      alt="Lorem ipsum dolor sit amet"
+      class="c4"
+      src="https://res.cloudinary.com/dxrvtimah/image/upload/v1695813803/advogado_f4b1e5b62f.jpg"
+    />
+    <div
+      class="c5"
+    >
+      <p>
+        <span>
+          Por 
+        </span>
+        <a
+          href="/author/gabriel-sousa"
+        >
+          Gabriel Sousa
+        </a>
+        <span
+          class="separator"
+        >
+           | 
+        </span>
+        <time
+          datetime="2023-09-27T11:26:43.234Z"
+        >
+          27 de set. de 2023
+        </time>
+        <span
+          class="separator"
+        >
+           | 
+        </span>
+        <span
+          class="categories"
+        >
+          <span>
+            <a
+              href="/category/java-script"
+            >
+              JavaScript
+            </a>
+          </span>
+          <span>
+            <a
+              href="/category/react"
+            >
+              React
+            </a>
+          </span>
+        </span>
+      </p>
+    </div>
+  </header>
+</div>
+`;
