@@ -21,7 +21,7 @@ export const LogoLink = ({
   if (nextLink) {
     return (
       <Heading size="small" $uppercase>
-        <Link href={link} passHref>
+        <Link href={link} passHref legacyBehavior>
           <Styled.Container target={target}>
             {!!srcImg && <img src={srcImg} alt={text} />}
             {!srcImg && text}

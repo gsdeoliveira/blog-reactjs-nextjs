@@ -59,17 +59,14 @@ exports[`<Header /> should match snapshot 1`] = `
       class="c1 c2"
     >
       <a
+        class="c3"
         href="/"
+        target="_self"
       >
-        <a
-          class="c3"
-          target="_self"
-        >
-          <img
-            alt="Otávio Miranda - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
-            src="/assets/images/otavio-miranda.png"
-          />
-        </a>
+        <img
+          alt="Otávio Miranda - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+          src="/assets/images/otavio-miranda.png"
+        />
       </a>
     </h1>
     <div

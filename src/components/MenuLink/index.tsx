@@ -13,7 +13,7 @@ export const MenuLink = ({ children, link, newTab = false }: MenuLinkProps) => {
 
   if (nextLink) {
     return (
-      <Link href={link} passHref>
+      <Link href={link} passHref legacyBehavior>
         <Styled.Container className="internal-link" target={target}>
           {children}
         </Styled.Container>
