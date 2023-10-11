@@ -18,9 +18,9 @@ describe('<PostGrid />', () => {
 
     expect(screen.queryByText(/Nenhum post/i)).not.toBeInTheDocument();
 
-    expect(screen.getAllByRole('heading')).toHaveLength(2);
-    expect(screen.getAllByRole('img')).toHaveLength(2);
-    expect(container.querySelectorAll('p')).toHaveLength(2);
+    expect(screen.getAllByRole('heading')).toHaveLength(3);
+    expect(screen.getAllByRole('img')).toHaveLength(3);
+    expect(container.querySelectorAll('p')).toHaveLength(3);
   });
 
   it('should match snapshot', () => {

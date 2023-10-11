@@ -11,7 +11,6 @@ export const PostGrid = ({ posts = [] }: PostGridProps) => {
       {posts.length === 0 && (
         <Styled.NotFound>Nenhum post encontrado aqui =( </Styled.NotFound>
       )}
-
       <Styled.Grid>
         {posts.length > 0 &&
           posts.map((post) => (

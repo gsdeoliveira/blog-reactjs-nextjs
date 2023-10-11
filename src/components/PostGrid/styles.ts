@@ -20,6 +20,7 @@ export const Grid = styled.div`
     grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
     gap: ${theme.spacings.large};
     padding: ${theme.spacings.large};
+
     @media ${theme.media.lteSmall} {
       grid-template-columns: 1fr;
     }
