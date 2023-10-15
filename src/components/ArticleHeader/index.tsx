@@ -22,7 +22,7 @@ export const ArticleHeader = ({
     <Styled.Wrapper>
       <Heading size="huge">{title}</Heading>
       <Styled.Excerpt>{excerpt}</Styled.Excerpt>
-      <Styled.Cover src={cover.data.attributes.url} alt={title} />
+      <Styled.Cover src={cover.url} alt={title} />
       <ArticleMeta
         categories={categories}
         author={author}

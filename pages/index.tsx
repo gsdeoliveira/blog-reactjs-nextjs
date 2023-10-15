@@ -1,14 +1,43 @@
-import { useEffect } from 'react';
-import { loadPosts } from '../src/api/load-posts';
+import Head from 'next/head';
+import { GetStaticProps } from 'next';
+import { loadPosts, StrapiPostAndSettings } from '../src/api/load-posts';
+import { PostsTemplate } from '../src/templates/PostsTemplates';
 
-export default function Index() {
-  useEffect(() => {
-    loadPosts({
-      authorSlug: 'gabriel-sousa',
-    }).then((r) => {
-      console.log(r);
-    });
-  }, []);
-
-  return <h1>OI</h1>;
+export default function Index({ posts, setting }: StrapiPostAndSettings) {
+  return (
+    <>
+      <Head>
+        <title>
+          {setting.blogName} - {setting.blogDescription}
+        </title>
+        <meta name="description" content={setting.blogDescription} />
+      </Head>
+      <PostsTemplate posts={posts} settings={setting} />
+    </>
+  );
 }
+
+export const getStaticProps: GetStaticProps<
+  StrapiPostAndSettings
+> = async () => {
+  let data = null;
+
+  try {
+    data = await loadPosts();
+  } catch (e) {
+    data = null;
+  }
+
+  if (!data || !data.posts || !data.posts.length) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {
+      posts: data.posts,
+      setting: data.setting,
+    },
+  };
+};

@@ -21,11 +21,8 @@ export const ArticleMeta = ({
         {typeof author !== 'undefined' && (
           <>
             <span>Por </span>
-            <Link
-              href={`/author/${author.data.attributes.slug}`}
-              legacyBehavior
-            >
-              <a>{author.data.attributes.displayName}</a>
+            <Link href={`/author/${author.slug}`} legacyBehavior>
+              <a>{author.displayName}</a>
             </Link>
 
             <span className="separator"> | </span>
@@ -39,11 +36,8 @@ export const ArticleMeta = ({
               {categories.map((category) => {
                 return (
                   <span key={`article-meta-cat-${category.id}`}>
-                    <Link
-                      href={`/category/${category.attributes.slug}`}
-                      legacyBehavior
-                    >
-                      <a>{category.attributes.displayName}</a>
+                    <Link href={`/category/${category.slug}`} legacyBehavior>
+                      <a>{category.displayName}</a>
                     </Link>
                   </span>
                 );

@@ -1,15 +1,8 @@
 import { PostProps } from '.';
-import { data } from '../../api/dados.json';
+import { mappedData as data } from '../../api/map-data';
 
-const {
-  title,
-  excerpt,
-  cover,
-  content,
-  author,
-  categorias: { categories },
-  createdAt,
-} = data.posts.data[0].attributes;
+const { title, excerpt, cover, content, author, categories, createdAt } =
+  data.posts[0];
 
 export default {
   title,

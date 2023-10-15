@@ -3,6 +3,7 @@ import config from '../config';
 import { GRAPHQL_QUERY } from '../graphql/queries';
 import { PostStrapi } from '../shared-types/post-strapi';
 import { SettingsStrapi } from '../shared-types/settings-strapi';
+import { mapData } from './map-data';
 
 export type LoadPostsVariables = {
   categorySlug?: string;
@@ -17,9 +18,7 @@ export type LoadPostsVariables = {
 
 export type StrapiPostAndSettings = {
   setting: SettingsStrapi;
-  posts: {
-    data: PostStrapi[];
-  };
+  posts: PostStrapi[];
 };
 
 function NotIsEmpty(obj) {
@@ -47,13 +46,11 @@ export const loadPosts = async (
     postSearch: '',
   };
 
-  const data: StrapiPostAndSettings = await request(
-    config.graphqlURL,
-    GRAPHQL_QUERY,
-    {
+  const data: StrapiPostAndSettings = mapData(
+    await request(config.graphqlURL, GRAPHQL_QUERY, {
       ...defaultVariables,
       ...variables,
-    },
+    }),
   );
 
   return data;

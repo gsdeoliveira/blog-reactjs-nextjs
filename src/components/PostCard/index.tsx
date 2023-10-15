@@ -16,7 +16,7 @@ export const PostCard = ({ title, cover, excerpt, slug }: PostCardProps) => {
     <Styled.Wrapper>
       <Link href={`/post/${slug}`} legacyBehavior>
         <a>
-          <Styled.Cover src={cover.data.attributes.url} />
+          <Styled.Cover src={cover.url} />
         </a>
       </Link>
 

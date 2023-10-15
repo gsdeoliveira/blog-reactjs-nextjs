@@ -1,14 +1,7 @@
 import { ArticleHeaderProps } from '.';
-import { data as jsonData } from '../../api/dados.json';
+import { mappedData as data } from '../../api/map-data';
 
-const {
-  title,
-  excerpt,
-  cover,
-  author,
-  categorias: { categories },
-  createdAt,
-} = jsonData.posts.data[0].attributes;
+const { title, excerpt, cover, author, categories, createdAt } = data.posts[0];
 
 export default {
   title,
